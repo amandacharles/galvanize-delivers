@@ -2,7 +2,14 @@
 .background{
   background-image: url("img/hero.jpg");
   height: 300px;
+  background-size: cover;
 }
 h1{
   text-align: center;
+}
+i{
+  padding-right: 9px;
+}
+.nav-wrapper{
+  padding-left: 15px;
 }
