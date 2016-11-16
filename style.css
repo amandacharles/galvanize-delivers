@@ -14,3 +14,16 @@ i{
 .nav-wrapper{
   padding-left: 15px;
 }
+.orderForm{
+  display: block;
+}
+.input-field{
+display: block;
+margin-top: 1px;
+margin-bottom: 1px;
+padding: 0;
+}
+#icon_prefix2{
+  padding-top: 2px;
+  padding-bottom: 1px;
+}
