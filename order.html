@@ -8,8 +8,13 @@
   <title>Order Page</title>
 
   <!--Import jQuery before materialize.js-->
-  <script defer src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script defer
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
   <script defer src="js/materialize.js"></script>
+  <script defer src="js/index.js"></script>
 
   <!--Import Google Icon Font-->
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,7 +26,7 @@
   <!-- Nav Bar **************************   -->
   <nav>
     <div class="nav-wrapper blue darken-2">
-      <a href="#" class="brand-logo">Galvanize Delivers</a>
+      <a href="index.html" class="brand-logo">Galvanize Delivers</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="order.html">Order Delivery</a></li>
       </ul>
@@ -34,7 +39,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col s12 m6">
+      <div id="menu"class="col s12 m7">
         <h4>Menu</h4>
         <div class="row">
           <div class="col s12 m6">
@@ -44,10 +49,10 @@
               </div>
               <div class="card-content">
                 <p>Veggie Burger</p>
-                <small>8.99</small>
+                <small id="veggie">$8.99</small>
               </div>
               <div class="card-action">
-                <a href="#" class="pink-text">ADD TO ORDER</a>
+                <a href="#" class="pink-text" value="8.99">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -58,10 +63,10 @@
               </div>
               <div class="card-content">
                 <p>Arugala Pie</p>
-                <small>$11.99</small>
+                <small id="pie">$11.99</small>
               </div>
               <div class="card-action">
-                <a href="#" class="pink-text">ADD TO ORDER</a>
+                <a href="#" class="pink-text" value="11.99">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -74,10 +79,10 @@
               </div>
               <div class="card-content">
                 <p>Smoked Tempeh</p>
-                <small>$14.99</small>
+                <small id="smoked">$14.99</small>
               </div>
               <div class="card-action">
-                <a href="#" class="pink-text">ADD TO ORDER</a>
+                <a href="#" class="pink-text" value="14.99">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -88,10 +93,10 @@
               </div>
               <div class="card-content">
                 <p>Ice Cream Biscuit</p>
-                <small>$7.99</small>
+                <small id="biscuit">$7.99</small>
               </div>
               <div class="card-action">
-                <a href="#" class="pink-text">ADD TO ORDER</a>
+                <a href="#" class="pink-text" value="7.99">ADD TO ORDER</a>
               </div>
             </div>
           </div>
@@ -100,7 +105,7 @@
 
       <!-- ORDER SECTION *********** -->
 
-      <div class="col s12 m6">
+      <div class="col s12 m5">
         <h4>Order</h4>
         <div class="row">
           <div class="col s12">
@@ -134,15 +139,15 @@
               <tbody>
                 <tr>
                   <td class="right-align">Subtotal</td>
-                  <td class="right-align">$33.00</td>
+                  <td id="subtotal" class="right-align">$00.00</td>
                 </tr>
                 <tr>
                   <td class="right-align">Tax</td>
-                  <td class="right-align">$4.00</td>
+                  <td id="tax" class="right-align">$00.00</td>
                 </tr>
                 <tr>
                   <td class="right-align">Total</td>
-                  <td class="right-align">$37.00</td>
+                  <td id="total" class="right-align">$00.00</td>
                 </tr>
               </tbody>
             </table>
@@ -156,18 +161,18 @@
             <div class="row">
               <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
-                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                <label for="icon_prefix2">Name</label>
+                <textarea id="name" class="materialize-textarea"></textarea>
+                <label for="name" data-error="required">Name</label>
               </div>
               <div class="input-field col s12">
                 <i class="material-icons prefix">call</i>
-                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                <label for="icon_prefix2">Phone Number</label>
+                <textarea id="phoneNumber" class="materialize-textarea"></textarea>
+                <label for="phoneNumber">Phone Number</label>
               </div>
               <div class="input-field col s12">
                 <i class="material-icons prefix">business</i>
-                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                <label for="icon_prefix2">Address</label>
+                <textarea id="address" class="materialize-textarea"></textarea>
+                <label for="address">Address</label>
               </div>
             </div>
             <div class="center-align">
@@ -191,8 +196,8 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Order Delivery</a></li>
+            <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="order.html">Order Delivery</a></li>
           </ul>
         </div>
       </div>
