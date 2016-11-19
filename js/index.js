@@ -31,10 +31,15 @@ $total.text(totalPrice)
 
 })
 
-$('form').on('click', '.center-btn', (event) => {
+// submit the order form and clear the amount fields
+
+$('#submit').on('click', () => {
+
+$subtotal.text('00.00');
+$total.text('00.00');
+$tax.text('00.00');
+
+$('textarea').val('')
 
 });
-
-
-
 })();
